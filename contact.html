@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <title>My Website| Contact</title>
+  </head>
+  <body>
+    <div class="header">
+      <h3>Ayush Petigara</h3>
+    </div>
+    <nav id="navbar">
+      <a class="active" href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container">
+      <form class="contact">
+        <input id="input" type="text" placeholder="Enter your email" required>
+        <br>
+        <input type="submit" value="Submit" id="submit">
+      </form>
+    </div>
+    <script>
+      var submit_button = document.getElementById("submit");
+      submit_button.addEventListener("click", function() {
+        alert("Thanks for subitting your email: " + document.getElementById("input").value);
+      });
+    </script>
+  </body>
+</html>
